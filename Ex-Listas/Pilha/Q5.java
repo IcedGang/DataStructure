@@ -34,7 +34,7 @@ public class Q5 {
         return false;
     }
 
-    public static void verify(Pilha<Character> stack, String str, Character open, Character lock, int i){
+    public static void verify(Pilha<Character> stack, String str, Character open, Character close, int i){
         if(str.charAt(i) == open)
             stack.empilhar(str.charAt(i));
         if(str.charAt(i) == lock)

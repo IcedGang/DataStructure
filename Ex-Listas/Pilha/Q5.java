@@ -37,7 +37,7 @@ public class Q5 {
     public static void verify(Pilha<Character> stack, String str, Character open, Character close, int i){
         if(str.charAt(i) == open)
             stack.empilhar(str.charAt(i));
-        if(str.charAt(i) == lock)
+        if(str.charAt(i) == close)
             if(stack.getTam() == 0){
                 System.out.println("Expressão Inválida!!");
                 System.exit(i);
